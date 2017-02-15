@@ -30,7 +30,6 @@ namespace PalindromeApp
                 result = true;
             }
 
-
             return result;
         }
     }
