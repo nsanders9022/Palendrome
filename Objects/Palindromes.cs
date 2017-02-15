@@ -23,11 +23,18 @@ namespace PalindromeApp
             char[] wordArray = userWord.ToCharArray();
             char[] wordArray2 = userWord.ToCharArray();
             Array.Reverse(wordArray2);
-            bool result = false;
+            bool result = true;
 
-            if (wordArray == wordArray)
+            Console.WriteLine(wordArray);
+            Console.WriteLine(wordArray2);
+
+            for (int i = 0; i <wordArray.Length; i++)
             {
-                result = true;
+                if (wordArray[i] == wordArray2[i])
+                {
+                    continue;
+                }
+                result = false;
             }
 
             return result;

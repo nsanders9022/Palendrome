@@ -37,5 +37,27 @@ namespace PalindromeApp
 
             Assert.Equal(true, result);
         }
+
+        [Fact]
+        public void PaliChecker_PalindromecheckError_Truebool()
+        {
+            string wordInput = "that";
+
+            Palindromes testPali = new Palindromes(wordInput);
+            bool result = testPali.PaliChecker();
+
+            Assert.Equal(false, result);
+        }
+
+        [Fact]
+        public void PaliChecker_PalindromecheckError_Truebool2()
+        {
+            string wordInput = "fobot";
+
+            Palindromes testPali = new Palindromes(wordInput);
+            bool result = testPali.PaliChecker();
+
+            Assert.Equal(false, result);
+        }
     }
 }
